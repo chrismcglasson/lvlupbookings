@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QR9YZX7SD7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QR9YZX7SD7');
+  </script>
+
+  <title>lvlupbookings — LvL Up Media AI Booking Assistant</title>
+  <meta name="description" content="lvlupbookings is LvL Up Media's AI phone assistant integration — it connects to your Google Calendar to check availability and book appointments with your customers automatically." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="LvL Up Media" />
+  <link rel="canonical" href="https://bookings.lvlupmedia.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bookings.lvlupmedia.io/" />
+  <meta property="og:title" content="lvlupbookings — LvL Up Media AI Booking Assistant" />
+  <meta property="og:description" content="LvL Up Media's AI phone assistant connects to Google Calendar to check availability and book appointments on behalf of trade businesses." />
+  <meta property="og:image" content="https://lvlupmedia.io/Media/Logo/LvL-Up-Media-Logo-Kit/png/lvlup-app-icon-1024.png" />
+  <meta property="og:site_name" content="LvL Up Media" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="lvlupbookings — LvL Up Media AI Booking Assistant" />
+  <meta name="twitter:description" content="LvL Up Media's AI phone assistant connects to Google Calendar to check availability and book appointments automatically." />
+  <meta name="twitter:image" content="https://lvlupmedia.io/Media/Logo/LvL-Up-Media-Logo-Kit/png/lvlup-app-icon-1024.png" />
+
+  <link rel="icon" type="image/png" sizes="256x256" href="https://lvlupmedia.io/Media/Logo/LvL-Up-Media-Logo-Kit/png/lvlup-favicon-256.png" />
+  <link rel="apple-touch-icon" href="https://lvlupmedia.io/Media/Logo/LvL-Up-Media-Logo-Kit/png/lvlup-app-icon-512.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --purple:#5B2A8C; --magenta:#A31D8C; --pink:#D61E7E; --orange:#F3933C;
+      --mute:#8C8690; --lilac:#B9AEC4; --dark-a:#1A1320; --dark-b:#241828;
+      --dark-card:#1F1626; --dark-card2:#251C2D;
+      --grad:linear-gradient(140deg,#5B2A8C 0%,#A31D8C 45%,#D61E7E 72%,#F3933C 100%);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family:'Outfit',sans-serif; background:linear-gradient(135deg,var(--dark-a),var(--dark-b)); color:#fff; min-height:100vh; -webkit-font-smoothing:antialiased; }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:0.01ms !important; transition-duration:0.01ms !important; } }
+
+    nav { position:fixed; top:16px; left:50%; transform:translateX(-50%); width:calc(100% - 32px); max-width:1200px; background:rgba(26,19,32,0.85); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border:1px solid rgba(163,29,140,0.25); border-radius:16px; padding:14px 28px; display:flex; align-items:center; justify-content:space-between; z-index:100; }
+    .nav-logo { display:flex; align-items:center; gap:12px; text-decoration:none; }
+    .logo-lockup { display:flex; align-items:center; gap:10px; }
+    .logo-mark svg { display:block; }
+    .logo-wordmark { display:flex; flex-direction:column; justify-content:center; }
+    .logo-lvlup { font-family:'Outfit',sans-serif; font-weight:700; color:#fff; letter-spacing:-1.5px; line-height:1; display:flex; align-items:baseline; font-size:22px; }
+    .logo-up { margin-left:0.25em; }
+    .logo-media-row { display:flex; justify-content:space-between; font-family:'JetBrains Mono',monospace; font-weight:400; color:#B9AEC4; line-height:1; font-size:9px; margin-top:3px; width:100%; }
+    .logo-media-row span { display:inline-block; }
+    .nav-links { display:flex; align-items:center; gap:32px; }
+    .nav-links a { font-size:15px; font-weight:500; color:var(--lilac); text-decoration:none; transition:color 0.2s; }
+    .nav-links a:hover { color:#fff; }
+    .nav-mobile-toggle { display:none; background:none; border:none; cursor:pointer; color:var(--lilac); }
+
+    .container { max-width:900px; margin:0 auto; padding:0 24px; }
+
+    .page-hero { padding:150px 0 40px; position:relative; overflow:hidden; text-align:center; }
+    .hero-glow { position:absolute; border-radius:50%; filter:blur(120px); pointer-events:none; }
+    .hero-glow-1 { width:500px; height:500px; background:rgba(91,42,140,0.3); top:-100px; left:50%; transform:translateX(-70%); }
+    .hero-glow-2 { width:400px; height:400px; background:rgba(214,30,126,0.16); top:80px; left:50%; transform:translateX(20%); }
+    .page-hero-inner { position:relative; z-index:1; }
+
+    .app-badge {
+      display:inline-flex; align-items:center; gap:8px;
+      font-family:'JetBrains Mono', monospace;
+      font-size:12px; font-weight:500; color:var(--orange);
+      background:rgba(243,147,60,0.12); border:1px solid rgba(243,147,60,0.3);
+      padding:6px 14px; border-radius:100px; margin-bottom:28px;
+      letter-spacing:0.08em; text-transform:uppercase;
+    }
+    .app-badge-dot { width:6px; height:6px; border-radius:50%; background:var(--orange); }
+
+    .app-title {
+      font-size:clamp(2.4rem, 6vw, 4rem);
+      font-weight:900; letter-spacing:-0.03em; line-height:1;
+      background:var(--grad);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+      margin-bottom:8px;
+    }
+    .app-parent { font-family:'JetBrains Mono', monospace; font-size:13px; color:var(--mute); letter-spacing:0.04em; margin-bottom:28px; }
+    .app-parent strong { color:var(--lilac); font-weight:500; }
+
+    .page-hero p.lede {
+      font-size:clamp(1.05rem, 1.8vw, 1.25rem);
+      color:var(--lilac); line-height:1.75;
+      max-width:660px; margin:0 auto;
+    }
+    .page-hero p.lede strong { color:#fff; font-weight:600; }
+
+    .section-label { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; margin-bottom:14px; }
+
+    .app-body { padding:56px 0 100px; }
+
+    .app-card { background:var(--dark-card); border:1px solid rgba(163,29,140,0.18); border-radius:20px; padding:44px 48px; margin-bottom:28px; }
+    .app-card h2 { font-size:1.35rem; font-weight:700; margin-bottom:16px; letter-spacing:-0.01em; }
+    .app-card p { font-size:0.98rem; color:var(--lilac); line-height:1.8; margin-bottom:14px; }
+    .app-card p:last-child { margin-bottom:0; }
+
+    .feature-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:24px; }
+    .feature-item { display:flex; align-items:flex-start; gap:12px; background:var(--dark-card2); border:1px solid rgba(163,29,140,0.16); border-radius:14px; padding:18px 20px; }
+    .feature-check {
+      width:22px; height:22px; border-radius:50%; background:var(--grad);
+      display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:1px;
+    }
+    .feature-text { font-size:0.92rem; color:#fff; line-height:1.6; }
+    .feature-text span { display:block; color:var(--mute); font-size:0.82rem; margin-top:3px; font-weight:400; }
+
+    .highlight-clause { background:rgba(91,42,140,0.18); border:1px solid rgba(163,29,140,0.3); border-left:3px solid var(--magenta); border-radius:8px; padding:20px 24px; margin-top:8px; }
+    .highlight-clause p { color:#fff; font-size:0.95rem; margin:0; }
+    .highlight-clause a { color:var(--orange); text-decoration:none; border-bottom:1px solid rgba(243,147,60,0.3); transition:border-color 0.2s; }
+    .highlight-clause a:hover { border-color:var(--orange); }
+
+    footer { border-top:1px solid rgba(163,29,140,0.2); padding:40px 0 0; margin-top:0; }
+    .footer-inner { max-width:1200px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px; }
+    .footer-logo { display:flex; align-items:center; gap:12px; }
+    .footer-logo .logo-lvlup { font-size:18px; }
+    .footer-logo .logo-media-row { font-size:7.5px; margin-top:2px; }
+    .footer-copy { font-size:13px; color:var(--mute); }
+    .footer-legal { max-width:1200px; margin:0 auto; padding:16px 24px 32px; display:flex; align-items:center; gap:24px; flex-wrap:wrap; border-top:1px solid rgba(163,29,140,0.1); margin-top:20px; }
+    .footer-legal a { font-size:12px; color:var(--mute); text-decoration:none; font-family:'JetBrains Mono',monospace; transition:color 0.2s; }
+    .footer-legal a:hover { color:var(--lilac); }
+    .footer-legal-sep { color:rgba(185,174,196,0.2); font-size:12px; }
+
+    @media (max-width:768px) {
+      nav { padding:12px 18px; }
+      .nav-links { display:none; }
+      .nav-mobile-toggle { display:block; }
+      .nav-links.open { display:flex; flex-direction:column; position:fixed; top:80px; left:16px; right:16px; background:var(--dark-a); border:1px solid rgba(163,29,140,0.3); border-radius:16px; padding:24px; gap:16px; z-index:99; }
+      .app-card { padding:28px 24px; }
+      .feature-grid { grid-template-columns:1fr; }
+      .footer-inner { flex-direction:column; align-items:flex-start; }
+      .footer-legal { flex-direction:column; gap:12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav role="banner">
+    <a href="https://lvlupmedia.io/" class="nav-logo" aria-label="LvL Up Media Home">
+      <div class="logo-lockup">
+        <div class="logo-mark">
+          <svg width="40" height="32" viewBox="0 0 96 76" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="0"  y="54" width="22" height="22" rx="5" fill="#9A3AA8"/>
+            <rect x="29" y="27" width="22" height="22" rx="5" fill="#CF1F7E"/>
+            <rect x="29" y="54" width="22" height="22" rx="5" fill="#A31D8C"/>
+            <rect x="58" y="0"  width="22" height="22" rx="5" fill="#F3933C"/>
+            <rect x="58" y="27" width="22" height="22" rx="5" fill="#E6377A"/>
+            <rect x="58" y="54" width="22" height="22" rx="5" fill="#D61E7E"/>
+          </svg>
+        </div>
+        <div class="logo-wordmark">
+          <div class="logo-lvlup">
+            <span class="logo-lvl">LvL</span><span class="logo-up">Up</span>
+          </div>
+          <div class="logo-media-row">
+            <span>M</span><span>E</span><span>D</span><span>I</span><span>A</span>
+          </div>
+        </div>
+      </div>
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="https://lvlupmedia.io/">Home</a>
+      <a href="https://lvlupmedia.io/privacy-policy.html">Privacy Policy</a>
+      <a href="https://lvlupmedia.io/contact.html">Contact</a>
+    </div>
+    <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links" onclick="toggleNav(this)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero" aria-labelledby="app-heading">
+    <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+    <div class="container page-hero-inner">
+      <div class="app-badge">
+        <span class="app-badge-dot" aria-hidden="true"></span>
+        Google Calendar Integration
+      </div>
+      <h1 id="app-heading" class="app-title">lvlupbookings</h1>
+      <p class="app-parent">by <strong>LvL Up Media</strong> — ClearStack Advisory DBA LvL Up Media</p>
+      <p class="lede">
+        <strong>lvlupbookings</strong> is the calendar integration behind LvL Up Media's AI phone assistant. It connects to a business's Google Calendar to check real-time availability and book appointments with their customers automatically — day or night.
+      </p>
+    </div>
+  </section>
+
+  <!-- APP BODY -->
+  <section class="app-body">
+    <div class="container">
+
+      <div class="app-card">
+        <div class="section-label" aria-hidden="true">What This App Does</div>
+        <h2>Your calendar, working while you're on the job</h2>
+        <p>When a customer calls or texts a business that uses LvL Up Media's 24/7 Digital Booking Hub, the AI phone assistant needs to know what times are actually open. <strong>lvlupbookings</strong> is the piece that makes that possible — it reads free/busy availability from the connected Google Calendar and writes new appointments directly onto it once a time is confirmed with the customer.</p>
+        <p>Nothing is booked without a real, available time slot, and every appointment created through the assistant is placed on the same calendar the business already uses — no separate scheduling tool to check.</p>
+
+        <div class="feature-grid" role="list" aria-label="What lvlupbookings does with calendar access">
+          <div class="feature-item" role="listitem">
+            <div class="feature-check" aria-hidden="true">
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="feature-text">Checks real-time availability
+              <span>Reads free/busy status before offering a time to a customer.</span>
+            </div>
+          </div>
+          <div class="feature-item" role="listitem">
+            <div class="feature-check" aria-hidden="true">
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="feature-text">Books confirmed appointments
+              <span>Creates the calendar event once a customer confirms a time.</span>
+            </div>
+          </div>
+          <div class="feature-item" role="listitem">
+            <div class="feature-check" aria-hidden="true">
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="feature-text">Keeps one source of truth
+              <span>Uses the business's existing Google Calendar — no separate app to manage.</span>
+            </div>
+          </div>
+          <div class="feature-item" role="listitem">
+            <div class="feature-check" aria-hidden="true">
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="feature-text">Never sold or shared
+              <span>Calendar data is used only to schedule appointments for that business.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <div class="section-label" aria-hidden="true">Your Data</div>
+        <h2>How we handle calendar access</h2>
+        <p>lvlupbookings only requests the calendar permissions it needs to check availability and create appointments. It does not read, modify, or delete any other calendar data, and access can be revoked at any time from a connected Google account's <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer" style="color:var(--orange); text-decoration:none; border-bottom:1px solid rgba(243,147,60,0.3);">third-party access settings</a>.</p>
+        <div class="highlight-clause">
+          <p>Full details on what we collect, how it's used, and how it's protected are in our <a href="https://lvlupmedia.io/privacy-policy.html">Privacy Policy</a>. Our <a href="https://lvlupmedia.io/terms-and-conditions.html">Terms &amp; Conditions</a> cover the terms of use for LvL Up Media's services, including lvlupbookings.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <div class="logo-lockup">
+          <div class="logo-mark">
+            <svg width="38" height="30" viewBox="0 0 96 76" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="0"  y="54" width="22" height="22" rx="5" fill="#9A3AA8"/>
+              <rect x="29" y="27" width="22" height="22" rx="5" fill="#CF1F7E"/>
+              <rect x="29" y="54" width="22" height="22" rx="5" fill="#A31D8C"/>
+              <rect x="58" y="0"  width="22" height="22" rx="5" fill="#F3933C"/>
+              <rect x="58" y="27" width="22" height="22" rx="5" fill="#E6377A"/>
+              <rect x="58" y="54" width="22" height="22" rx="5" fill="#D61E7E"/>
+            </svg>
+          </div>
+          <div class="logo-wordmark">
+            <div class="logo-lvlup">
+              <span class="logo-lvl">LvL</span><span class="logo-up">Up</span>
+            </div>
+            <div class="logo-media-row">
+              <span>M</span><span>E</span><span>D</span><span>I</span><span>A</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy">&copy; 2026 LvL Up Media. All rights reserved.<br />ClearStack Advisory DBA LvL Up Media · 5900 Balcones Drive, Suite 100, Austin, Texas 78731</div>
+    </div>
+    <div class="footer-legal">
+      <a href="https://lvlupmedia.io/privacy-policy.html">Privacy Policy</a>
+      <span class="footer-legal-sep" aria-hidden="true">|</span>
+      <a href="https://lvlupmedia.io/terms-and-conditions.html">Terms &amp; Conditions</a>
+      <span class="footer-legal-sep" aria-hidden="true">|</span>
+      <a href="https://lvlupmedia.io/contact.html">Contact Us</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var links = document.getElementById('nav-links');
+      var open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    document.addEventListener('click', function(e) {
+      var nav = document.getElementById('nav-links');
+      if (nav.classList.contains('open') && !nav.contains(e.target) && !e.target.closest('.nav-mobile-toggle')) {
+        nav.classList.remove('open');
+        document.querySelector('.nav-mobile-toggle').setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>
