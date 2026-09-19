@@ -371,8 +371,8 @@
     <section class="section data-grid" aria-labelledby="email-heading">
       <div class="data-main">
         <div class="section-label" aria-hidden="true">Email Sending</div>
-        <h2 id="email-heading">Booking emails, sent from your own address</h2>
-        <p>lvlupbookings can send booking-related emails from the Google account a business connects, such as appointment confirmations and new-booking notices [CHRIS: confirm email types, including whether appointment reminders are sent]. An email is sent only when a booking event triggers it, for example when a customer confirms an appointment time. Each message contains only the details of that booking.</p>
+        <h2 id="email-heading">Emails sent from your own address</h2>
+        <p>lvlupbookings can send emails from the Google account a business connects, such as appointment confirmations, new-booking notices, quotes, invoices, payment receipts, review requests, campaign emails, lead notifications, and contact emails. It does not send appointment reminders. Each email is sent only when an action in the platform triggers it, such as a customer confirming an appointment time, a business sending a quote, or a business starting a campaign. Each message contains only the content for that action.</p>
       </div>
       <div class="clause">
         <p><strong>It cannot read your inbox.</strong> lvlupbookings requests only Gmail's send permission (gmail.send). It can send a message and nothing else. It cannot read, search, list, or open any email in the connected mailbox.</p>
@@ -385,7 +385,7 @@
       <div class="data-main">
         <div class="section-label" aria-hidden="true">Your Data</div>
         <h2 id="data-heading">How we handle calendar access</h2>
-        <p>lvlupbookings requests events-only calendar access (the calendar.events permission). It uses that access to check availability and to create, update, and cancel appointments. It never creates, deletes, or administers calendars themselves, and it never changes calendar sharing settings. Access can be revoked at any time from a connected Google account's <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">third-party access settings</a>.</p>
+        <p>lvlupbookings requests two limited calendar permissions: calendar.events and calendar.readonly. It uses them to check availability and to create an appointment once a customer confirms a time. It never creates, deletes, or administers calendars themselves, and it never changes calendar sharing settings. Access can be revoked at any time from a connected Google account's <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">third-party access settings</a>.</p>
       </div>
       <div class="clause">
         <p>Full details on what we collect, how it's used, and how it's protected are in our <a href="https://lvlupmedia.io/privacy-policy.html">Privacy Policy</a>.</p>
