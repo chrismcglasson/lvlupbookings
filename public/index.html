@@ -309,7 +309,7 @@
             Google Calendar Integration
           </div>
           <h1 id="app-heading" class="app-title">lvlupbookings</h1>
-          <p class="app-parent">by <strong>LvL Up Media</strong> — ClearStack Advisory DBA LvL Up Media</p>
+          <p class="app-parent">by <strong>LvL Up Media</strong> (ClearStack Advisory LLC DBA LvL Up Media)</p>
           <p class="lede">
             <strong>lvlupbookings</strong> is the calendar integration behind LvL Up Media's AI phone assistant. It connects to a business's Google Calendar to check real-time availability and book appointments with their customers automatically — day or night.
           </p>
@@ -367,12 +367,25 @@
       </div>
     </section>
 
+    <!-- EMAIL SENDING -->
+    <section class="section data-grid" aria-labelledby="email-heading">
+      <div class="data-main">
+        <div class="section-label" aria-hidden="true">Email Sending</div>
+        <h2 id="email-heading">Booking emails, sent from your own address</h2>
+        <p>lvlupbookings can send booking-related emails from the Google account a business connects, such as appointment confirmations and new-booking notices [CHRIS: confirm email types, including whether appointment reminders are sent]. An email is sent only when a booking event triggers it, for example when a customer confirms an appointment time. Each message contains only the details of that booking.</p>
+      </div>
+      <div class="clause">
+        <p><strong>It cannot read your inbox.</strong> lvlupbookings requests only Gmail's send permission (gmail.send). It can send a message and nothing else. It cannot read, search, list, or open any email in the connected mailbox.</p>
+        <p>The <a href="https://lvlupmedia.io/privacy-policy.html">Privacy Policy</a> explains how this data is handled under Google's Limited Use requirements.</p>
+      </div>
+    </section>
+
     <!-- YOUR DATA -->
     <section class="section data-grid" aria-labelledby="data-heading">
       <div class="data-main">
         <div class="section-label" aria-hidden="true">Your Data</div>
         <h2 id="data-heading">How we handle calendar access</h2>
-        <p>lvlupbookings only requests the calendar permissions it needs to check availability and create appointments. It does not read, modify, or delete any other calendar data, and access can be revoked at any time from a connected Google account's <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">third-party access settings</a>.</p>
+        <p>lvlupbookings requests events-only calendar access (the calendar.events permission). It uses that access to check availability and to create, update, and cancel appointments. It never creates, deletes, or administers calendars themselves, and it never changes calendar sharing settings. Access can be revoked at any time from a connected Google account's <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">third-party access settings</a>.</p>
       </div>
       <div class="clause">
         <p>Full details on what we collect, how it's used, and how it's protected are in our <a href="https://lvlupmedia.io/privacy-policy.html">Privacy Policy</a>.</p>
@@ -403,7 +416,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-copy">&copy; 2026 LvL Up Media. All rights reserved.<br />ClearStack Advisory DBA LvL Up Media · 5900 Balcones Drive, Suite 100, Austin, Texas 78731</div>
+      <div class="footer-copy">&copy; 2026 LvL Up Media. All rights reserved.<br />ClearStack Advisory LLC DBA LvL Up Media · 5900 Balcones Drive, Suite 100, Austin, Texas 78731</div>
     </div>
     <div class="footer-badge"><img src="https://lvlupmedia.io/images/veteran-owned-badge.png" alt="Veteran Owned Business" width="80" height="82" loading="lazy" /></div>
     <div class="footer-legal">
